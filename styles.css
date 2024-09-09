@@ -1,0 +1,165 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(g2.jpg); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(37, 33, 33, 0.7);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0fb72b;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(139, 87%, 28%);
+}
+
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #faf6f6;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar div {
+    height: 100%;
+    background-color: #119b1a;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+
+#question-container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#options-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(187, 62%, 95%);
+    color: #0a0909;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#options-container button.correct {
+    background-color: #16b816;
+}
+
+#options-container button.incorrect {
+    background-color: #f44336;
+}
+
+
+#fireworks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+}
+
+
+#final-image img {
+    max-width: 150px;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+}
+
+
+#quiz-header {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #question-container, .page {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+ 
